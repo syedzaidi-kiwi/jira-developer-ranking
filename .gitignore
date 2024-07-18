@@ -18,6 +18,7 @@ data_advanced/
 
 # Output files
 developer_rankings.csv
+developer_rankings1.csv
 
 # Logs
 *.log
