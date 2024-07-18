@@ -59,4 +59,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the Proprietory License - see the LICENSE file for details.
+This project is proprietary software belonging to KiwiTech LLC. 
+All rights reserved. See the LICENSE file for full license details

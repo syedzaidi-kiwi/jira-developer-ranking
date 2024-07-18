@@ -1,0 +1,161 @@
+Name,Email,BugTime,SubtaskTime,BugCount,CriticalBugCount,BlockerBugCount,AvgCompletionTime,DaysLogged8Hours,ProjectTime,BenchTime,TotalScore,Rank
+Ashpreet Kaur,ashpreet.kaur@kiwitech.com,162.17,900.2,67,0,0,61.01,132.8,1062.37,0.0,10849.77,1
+Vipin Sahu,vipin.sahu@kiwitech.com,0.0,1021.75,0,0,0,0.0,127.72,1021.75,34.25,10754.12,2
+Shashi Kumar,shashi.kumar@kiwitech.com,0.0,1000.08,0,0,0,0.0,125.01,1000.08,55.92,10447.25,3
+Harish Kumar,harish.kumar@kiwitech.com,0.0,912.0,0,0,0,0.0,114.0,912.0,144.0,9419.26,4
+rashmi nainwal,rashmi.nainwal@kiwitech.com,0.0,904.73,0,0,0,0.0,113.09,904.73,151.27,9384.45,5
+Naushad Malik,naushad.malik@kiwitech.com,0.0,901.55,0,0,0,0.0,112.69,901.55,154.45,9358.86,6
+Raj Kamal Das,raj.kamal.das@kiwitech.com,0.0,888.0,0,0,0,0.0,111.0,888.0,168.0,9166.64,7
+Prince kumar Thakur,prince.kumar.thakur@kiwitech.com,0.0,874.5,0,0,0,0.0,109.31,874.5,181.5,9071.81,8
+Ayush Rajput,ayush.rajput@kiwitech.com,0.0,865.3,0,0,0,0.0,108.16,865.3,190.7,8930.08,9
+kenil padmani,kenil.padmani@kiwitech.com,0.0,821.97,0,0,0,0.0,102.75,821.97,234.03,8530.02,10
+Aman Chand,aman.chand@kiwitech.com,0.0,825.57,0,0,0,0.0,103.2,825.57,230.43,8527.98,11
+Meghna Sharma,meghna.sharma@kiwitech.com,0.0,812.05,0,0,0,0.0,101.51,812.05,243.95,8421.11,12
+Prashant Shukla,prashant.shukla@kiwitech.com,0.0,810.52,0,0,0,0.0,101.31,810.52,245.48,8364.83,13
+reetika.kapoor,reetika.kapoor@kiwitech.com,0.0,804.67,0,0,0,0.0,100.58,804.67,251.33,8352.67,14
+Abu Talib,abu.talib@kiwitech.com,0.0,802.88,0,0,0,0.0,100.36,802.88,253.12,8335.71,15
+Mayank Kumar Gupta,mayank.kumar.gupta@kiwitech.com,0.0,801.02,0,0,0,0.0,100.13,801.02,254.98,8315.48,16
+shivam.srivastava1,shivam.srivastava1@kiwitech.com,0.0,792.23,0,0,0,0.0,99.03,792.23,263.77,8177.24,17
+Akshita Verma,akshita.verma@kiwitech.com,0.0,776.47,0,0,0,0.0,97.06,776.47,279.53,8059.83,18
+Sitara Husain,sitara.husain@kiwitech.com,0.0,765.05,0,0,0,0.0,95.63,765.05,290.95,7948.93,19
+Raji Ahmad,raji.ahmad@kiwitech.com,0.0,753.18,0,0,0,0.0,94.15,753.18,302.82,7826.45,20
+Sushil Kumar,sushil.kumar@kiwitech.com,0.0,740.43,0,0,0,0.0,92.55,740.43,315.57,7696.11,21
+mohit.mehra,mohit.mehra@kiwitech.com,0.0,740.45,0,0,0,0.0,92.56,740.45,315.55,7648.01,22
+purnima joshi,purnima.joshi@kiwitech.com,0.0,735.4,0,0,0,0.0,91.92,735.4,320.6,7644.78,23
+suneel.kumar,suneel.kumar@kiwitech.com,0.0,740.03,0,0,0,0.0,92.5,740.03,315.97,7643.72,24
+Hamza Khan,hamza.khan@kiwitech.com,0.0,734.27,0,0,0,0.0,91.78,734.27,321.73,7629.04,25
+Anjalikiwi,anjalikiwi@kiwitech.com,0.0,714.1,0,0,0,0.0,89.26,714.1,341.9,7420.8,26
+Aiman Akhtar,aiman.akhtar@kiwitech.com,0.0,709.55,0,0,0,0.0,88.69,709.55,346.45,7380.99,27
+Nikita kumari,nikita.kumari@kiwitech.com,0.0,692.32,0,0,0,0.0,86.54,692.32,363.68,7206.05,28
+Ayush Mehta1,ayush.mehta1@kiwitech.com,0.0,677.68,0,0,0,0.0,84.71,677.68,378.32,7049.54,29
+Jitender Kumar,jitender.kumar@kiwitech.com,0.0,680.04,0,0,0,0.0,85.0,680.04,375.96,7032.83,30
+Yuvraj Singh,yuvraj.singh@kiwitech.com,0.0,665.15,0,0,0,0.0,83.14,665.15,390.85,6922.9,31
+Priya Sahu,priya.sahu@kiwitech.com,0.0,657.13,0,0,0,0.0,82.14,657.13,398.87,6842.61,32
+navneet.uniyal,navneet.uniyal@kiwitech.com,0.0,657.27,0,0,0,0.0,82.16,657.27,398.73,6830.73,33
+Ruman Siddiqui,ruman.siddiqui@kiwitech.com,0.0,657.73,0,0,0,0.0,82.22,657.73,398.27,6806.06,34
+Mayur Chaudhary,mayur.chaudhary@kiwitech.com,0.0,632.13,0,0,0,0.0,79.02,632.13,423.87,6579.86,35
+Roushan Raj,roushan.raj@kiwitech.com,0.0,632.0,0,0,0,0.0,79.0,632.0,424.0,6544.72,36
+Vijay Kumar,vijay.kumar@kiwitech.com,0.0,624.0,0,0,0,0.0,78.0,624.0,432.0,6463.5,37
+Pulkit Agrawal,pulkit.agrawal@kiwitech.com,0.0,616.32,0,0,0,0.0,77.04,616.32,439.68,6434.92,38
+Ram Prakash,ram.prakash@kiwitech.com,0.0,603.62,0,0,0,0.0,75.45,603.62,452.38,6306.52,39
+Poem,poem@kiwitech.com,0.0,604.1,0,0,0,0.0,75.51,604.1,451.9,6261.54,40
+adnanzafar-kiwi,adnanzafar-kiwi@kiwitech.com,0.0,582.5,0,0,0,0.0,72.81,582.5,473.5,6084.57,41
+mohit.kumar2,mohit.kumar2@kiwitech.com,0.0,576.65,0,0,0,0.0,72.08,576.65,479.35,5983.11,42
+Saurabh Shakya,saurabh.shakya@kiwitech.com,0.0,554.97,0,0,0,0.0,69.37,554.97,501.03,5763.31,43
+Ravikant Kumar,ravikant.kumar@kiwitech.com,0.0,536.15,0,0,0,0.0,67.02,536.15,519.85,5621.0,44
+pramod kumar,pramod.kumar@kiwitech.com,0.0,533.97,0,0,0,0.0,66.75,533.97,522.03,5599.89,45
+chandan kumar,chandan.kumar@kiwitech.com,0.0,531.03,0,0,0,0.0,66.38,531.03,524.97,5521.52,46
+Neeraj Gupta,neeraj.gupta@kiwitech.com,0.0,525.33,0,0,0,0.0,65.67,525.33,530.67,5507.79,47
+Vijay Singh,vijay.singh@kiwitech.com,0.0,502.08,0,0,0,0.0,62.76,502.08,553.92,5227.39,48
+Medha Mishra,medha.mishra@kiwitech.com,0.0,498.03,0,0,0,0.0,62.25,498.03,557.97,5211.37,49
+Shakti Singh,shakti.singh@kiwitech.com,0.0,470.12,0,0,0,0.0,58.76,470.12,585.88,4948.39,50
+Ubaid ul Haque,ubaid.ul.haque@kiwitech.com,0.0,449.2,0,0,0,0.0,56.15,449.2,606.8,4738.87,51
+krishna.singhal,krishna.singhal@kiwitech.com,0.0,452.6,0,0,0,0.0,56.58,452.6,603.4,4726.35,52
+santosh.kumar1,santosh.kumar1@kiwitech.com,0.0,419.07,0,0,0,0.0,52.38,419.07,636.93,4386.95,53
+Parul taneja,parul.taneja@kiwitech.com,0.0,393.8,0,0,0,0.0,49.22,393.8,662.2,4169.69,54
+Govind Singh,govind.singh@kiwitech.com,0.0,390.5,0,0,0,0.0,48.81,390.5,665.5,4097.84,55
+Sagar Jon,sagar.jon@kiwitech.com,0.0,381.5,0,0,0,0.0,47.69,381.5,674.5,4055.46,56
+RUPESH MISHRA,rupesh.mishra@kiwitech.com,0.0,384.3,0,0,0,0.0,48.04,384.3,671.7,4035.11,57
+Rishabh Verma,rishabh.verma@kiwitech.com,0.0,376.07,0,0,0,0.0,47.01,376.07,679.93,3951.84,58
+Dhirendra Kumar Singh,dhirendra.kumar.singh@kiwitech.com,0.0,375.33,0,0,0,0.0,46.92,375.33,680.67,3944.35,59
+Bipin Bihari Gautam,bipin.bihari.gautam@kiwitech.com,0.0,366.33,0,0,0,0.0,45.79,366.33,689.67,3853.29,60
+Aditya Tripathi,aditya.tripathi@kiwitech.com,0.0,354.07,0,0,0,0.0,44.26,354.07,701.93,3729.27,61
+Devesh Sharma,devesh.sharma@kiwitech.com,0.0,353.23,0,0,0,0.0,44.15,353.23,702.77,3720.77,62
+Vaibhav Hurpade,vaibhav.hurpade@kiwitech.com,0.0,344.12,0,0,0,0.0,43.01,344.12,711.88,3652.42,63
+Zeeshan Qasim,zeeshan.qasim@kiwitech.com,0.0,338.52,0,0,0,0.0,42.31,338.52,717.48,3571.96,64
+Aasif Saifi,aasif.saifi@kiwitech.com,0.67,556.02,3,0,0,67.37,69.59,556.68,499.32,3526.27,65
+sanjeev.kumar1,sanjeev.kumar1@kiwitech.com,0.0,326.0,0,0,0,0.0,40.75,326.0,730.0,3445.33,66
+Asad Ali,asad.ali@kiwitech.com,0.0,311.9,0,0,0,0.0,38.99,311.9,744.1,3349.32,67
+Girish kumar sharma,girish.kumar.sharma@kiwitech.com,0.0,308.07,0,0,0,0.0,38.51,308.07,747.93,3263.99,68
+Simran Jeet Singh Nayol,simran.jeet.singh.nayol@kiwitech.com,0.0,302.02,0,0,0,0.0,37.75,302.02,753.98,3249.86,69
+nidhi.tanver,nidhi.tanver@kiwitech.com,0.0,287.42,0,0,0,0.0,35.93,287.42,768.58,3076.16,70
+Gautam Mahto,gautam.mahto@kiwitech.com,0.0,275.08,0,0,0,0.0,34.39,275.08,780.92,2975.65,71
+Akash Singh Gaur,akash.singh.gaur@kiwitech.com,0.0,278.27,0,0,0,0.0,34.78,278.27,777.73,2963.0,72
+Ankita Chandra,ankita.chandra@kiwitech.com,0.0,272.95,0,0,0,0.0,34.12,272.95,783.05,2947.17,73
+Vaishali Vinay,vaishali.vinay@kiwitech.com,0.0,269.7,0,0,0,0.0,33.71,269.7,786.3,2914.77,74
+Rohit Kumar,rohit.kumar@kiwitech.com,0.0,240.0,0,0,0,0.0,30.0,240.0,816.0,2623.81,75
+Pooja Malhotra,pooja.malhotra@kiwitech.com,0.0,232.57,0,0,0,0.0,29.07,232.57,823.43,2546.45,76
+Soumya Ranjan,soumya.ranjan@kiwitech.com,0.0,226.28,0,0,0,0.0,28.29,226.28,829.72,2436.96,77
+Arpita Baghel,arpita.baghel@kiwitech.com,0.0,225.05,0,0,0,0.0,28.13,225.05,830.95,2424.52,78
+Ishan Mohan,ishan.mohan@kiwitech.com,0.0,217.13,0,0,0,0.0,27.14,217.13,838.87,2393.14,79
+Rajan Singh,rajan.singh@kiwitech.com,0.0,199.62,0,0,0,0.0,24.95,199.62,856.38,2206.71,80
+Neeraj Sharma,neeraj.sharma@kiwitech.com,0.0,187.22,0,0,0,0.0,23.4,187.22,868.78,2067.9,81
+Ankit Sharma,ankit.sharma@kiwitech.com,0.0,181.42,0,0,0,0.0,22.68,181.42,874.58,1996.1,82
+Ankur Gupta,ankur.gupta@kiwitech.com,0.0,149.33,0,0,0,0.0,18.67,149.33,906.67,1702.94,83
+Anshu Kumar,anshu.kumar@kiwitech.com,0.0,148.0,0,0,0,0.0,18.5,148.0,908.0,1695.64,84
+Vipin Tomar,vipin.tomar@kiwitech.com,0.0,149.5,0,0,0,0.0,18.69,149.5,906.5,1660.81,85
+Sumit Pathak,sumit.pathak@kiwitech.com,0.0,131.75,0,0,0,0.0,16.47,131.75,924.25,1481.4,86
+Pawan Mishra,pawan.mishra@kiwitech.com,0.0,122.1,0,0,0,0.0,15.26,122.1,933.9,1433.78,87
+Abdullah,abdullah@kiwitech.com,0.0,120.83,0,0,0,0.0,15.1,120.83,935.17,1411.03,88
+Ahsan Khan,ahsan.khan@kiwitech.com,0.0,120.25,0,0,0,0.0,15.03,120.25,935.75,1365.17,89
+atul,atul@kiwitech.com,0.0,116.08,0,0,0,0.0,14.51,116.08,939.92,1323.03,90
+Shouvik Majumdar,shouvik.majumdar@kiwitech.com,0.0,104.0,0,0,0,0.0,13.0,104.0,952.0,1200.94,91
+Rajesh Vaishnav,rajesh.vaishnav@kiwitech.com,0.0,90.1,0,0,0,0.0,11.26,90.1,965.9,1064.01,92
+Akhlaq Ahmad,akhlaq.ahmad@kiwitech.com,0.0,85.92,0,0,0,0.0,10.74,85.92,970.08,1018.22,93
+Md Talha,md.talha@kiwitech.com,0.0,84.02,0,0,0,0.0,10.5,84.02,971.98,999.02,94
+Priyanka Yadav,priyanka.yadav@kiwitech.com,0.0,77.07,0,0,0,0.0,9.63,77.07,978.93,928.78,95
+deepak.soni,deepak.soni@kiwitech.com,0.0,72.0,0,0,0,0.0,9.0,72.0,984.0,877.55,96
+Ritesh Mishra,ritesh.mishra@kiwitech.com,0.0,63.62,0,0,0,0.0,7.95,63.62,992.38,792.86,97
+Astha shukla,astha.shukla@kiwitech.com,0.0,61.08,0,0,0,0.0,7.64,61.08,994.92,788.93,98
+Qurratulain Saleem,qurratulain.saleem@kiwitech.com,0.0,58.02,0,0,0,0.0,7.25,58.02,997.98,753.29,99
+Vanshika Chauhan,vanshika.chauhan@kiwitech.com,0.5,90.1,2,0,0,240.36,11.32,90.6,965.4,741.33,100
+shantanu kapil,shantanu.kapil@kiwitech.com,0.0,52.27,0,0,0,0.0,6.53,52.27,1003.73,724.85,101
+Poonam Yadav,poonam.yadav@kiwitech.com,0.0,56.02,0,0,0,0.0,7.0,56.02,999.98,716.06,102
+Syed Fardeen,syed.fardeen@kiwitech.com,0.0,51.83,0,0,0,0.0,6.48,51.83,1004.17,713.84,103
+Moharram Ali,moharram.ali@kiwitech.com,8.0,441.28,1,0,0,0.0,56.16,449.28,606.72,689.25,104
+Vikas Sharma,vikas.sharma@kiwitech.com,0.0,52.5,0,0,0,0.0,6.56,52.5,1003.5,680.49,105
+Gaurav surolia,gaurav.surolia@kiwitech.com,0.0,40.0,0,0,0,0.0,5.0,40.0,1016.0,604.18,106
+daniil,daniil@kiwitech.com,0.0,42.43,0,0,0,0.0,5.3,42.43,1013.57,595.45,107
+Tahmina Mehtiyeva,tahmina.mehtiyeva@kiwitech.com,2.0,127.75,1,0,0,0.0,16.22,129.75,926.25,588.52,108
+easwar.karthik,easwar.karthik@kiwitech.com,0.0,42.58,0,0,0,0.0,5.32,42.58,1013.42,580.25,109
+Lalit Kumar,lalit.kumar@kiwitech.com,0.0,29.53,0,0,0,0.0,3.69,29.53,1026.47,470.73,110
+Hritik Thakur,hritik.thakur@kiwitech.com,0.0,30.37,0,0,0,0.0,3.8,30.37,1025.63,466.09,111
+Atul Anand,atul.anand@kiwitech.com,0.0,15.02,0,0,0,0.0,1.88,15.02,1040.98,326.56,112
+Kavita Khati,kavita.khati@kiwitech.com,69.8,693.23,49,0,0,135.57,95.38,763.03,292.97,268.88,113
+Sumit Jain,sumit.jain@kiwitech.com,60.4,388.28,29,0,0,62.32,56.09,448.68,607.32,261.12,114
+bhawna.rawat,bhawna.rawat@kiwitech.com,51.55,523.73,34,0,0,114.48,71.91,575.28,480.72,258.23,115
+Sanyam Jain,sanyam.jain@kiwitech.com,0.0,10.08,0,0,0,0.0,1.26,10.08,1045.92,255.69,116
+Vrinda Gupta,vrinda.gupta@kiwitech.com,1.0,9.37,1,0,0,101.1,1.3,10.37,1045.63,225.87,117
+Mayank Khulbey,mayank.khulbey@kiwitech.com,36.43,252.12,35,4,0,113.14,36.07,288.55,767.45,216.24,118
+Shashank,shashank@kiwitech.com,42.44,270.07,27,0,0,52.84,39.06,312.5,743.5,207.95,119
+Ayush Kumar,ayush.kumar@kiwitech.com,212.0,28.07,12,0,0,48.98,30.01,240.07,815.93,204.66,120
+Indpreet Kaur,indpreet.kaur@kiwitech.com,43.97,279.85,23,0,0,324.64,40.48,323.82,732.18,195.79,121
+Andrii Odynak,andrii.odynak@kiwitech.com,19.02,0.0,3,3,0,8.13,2.38,19.02,1036.98,191.29,122
+Brian Schelp,brian.schelp@kiwitech.com,457.05,421.53,7,24,10,203.7,109.82,878.58,177.42,179.8,123
+Ravi Kumar5,ravi.kumar5@kiwitech.com,60.0,152.52,3,3,1,42.65,26.56,212.52,843.48,176.76,124
+Troy Glick,troy.glick@kiwitech.com,19.0,0.0,4,1,1,0.0,2.38,19.0,1037.0,142.99,125
+Abigail Blackman,abigail.blackman@kiwitech.com,16.0,0.0,5,3,0,0.0,2.0,16.0,1040.0,140.67,126
+Sahil Srivastava,sahil.srivastava@kiwitech.com,63.33,197.93,41,18,4,132.86,32.66,261.27,794.73,139.92,127
+mayank.arya,mayank.arya@kiwitech.com,25.97,21.0,4,0,6,189.54,5.87,46.97,1009.03,133.4,128
+Ashutosh agrawal,ashutosh.agrawal@kiwitech.com,56.67,0.0,57,3,1,38.33,7.08,56.67,999.33,130.16,129
+Ashish Singh,ashish.singh@kiwitech.com,9.7,29.53,5,10,7,34.52,4.9,39.23,1016.77,128.5,130
+Karan Parashar,karan.parashar@kiwitech.com,16.02,61.52,2,1,0,462.37,9.69,77.53,978.47,127.29,131
+Shivani Tyagi,shivani.tyagi@kiwitech.com,50.83,20.75,14,2,7,93.72,8.95,71.58,984.42,102.99,132
+Garg Sunny,garg.sunny@kiwitech.com,85.33,41.5,1,3,12,114.24,15.85,126.83,929.17,101.38,133
+Sahil Kakkar,sahil.kakkar@kiwitech.com,27.42,34.0,15,1,0,441.74,7.68,61.42,994.58,93.26,134
+Chandan Kumar Singh,chandan.kumar.singh@kiwitech.com,7.08,0.0,4,0,2,1052.78,0.89,7.08,1048.92,90.12,135
+Daksh Kumar,daksh.kumar@kiwitech.com,75.78,271.02,55,37,1,26.84,43.35,346.8,709.2,85.43,136
+Shashi.kumar1,shashi.kumar1@kiwitech.com,23.78,0.0,19,6,3,154.1,2.97,23.78,1032.22,80.38,137
+kathi dinesh,kathi.dinesh@kiwitech.com,159.2,24.0,63,9,0,53.25,22.9,183.2,872.8,78.85,138
+Anubha Agarwal1,anubha.agarwal1@kiwitech.com,65.73,117.03,84,5,5,64.29,22.85,182.77,873.23,64.55,139
+Aksh Chaudhary,aksh.chaudhary@kiwitech.com,82.4,18.22,81,33,2,102.87,12.58,100.62,955.38,38.34,140
+Abhi Meher yadav,abhi.meher.yadav@kiwitech.com,192.4,0.0,47,34,3,41.39,24.05,192.4,863.6,37.82,141
+Kimberly Auther,kimberly.auther@kiwitech.com,341.37,0.0,39,20,7,264.49,42.67,341.37,714.63,31.99,142
+Sumit Sharma1,sumit.sharma1@kiwitech.com,68.28,0.0,65,15,1,152.88,8.54,68.28,987.72,27.31,143
+akash.deep,akash.deep@kiwitech.com,22.6,0.0,28,0,0,566.37,2.82,22.6,1033.4,24.35,144
+Arushi Gautam,arushi.gautam@kiwitech.com,44.68,39.53,67,26,2,90.25,10.53,84.22,971.78,23.69,145
+Reetika Chaudhary,reetika.chaudhary@kiwitech.com,166.72,38.52,5,16,6,590.58,25.65,205.23,850.77,19.14,146
+Preeti Singh,preeti.singh@kiwitech.com,86.97,0.0,15,6,40,598.72,10.87,86.97,969.03,0.0,147
+Prerna Nandini,prerna.nandini@kiwitech.com,466.82,68.0,24,19,85,93.75,66.85,534.82,521.18,0.0,148
+rishabh.sharma,rishabh.sharma@kiwitech.com,226.87,0.0,84,36,81,66.99,28.36,226.87,829.13,0.0,149
+Madhuri Agarwal,madhuri.agarwal@kiwitech.com,417.4,1.03,101,40,0,189.72,52.3,418.43,637.57,0.0,150
+Henna Sondh,henna.sondh@kiwitech.com,226.05,0.0,98,24,134,83.92,28.26,226.05,829.95,0.0,151
+Kabir Pathak,kabir.pathak@kiwitech.com,342.2,262.25,38,130,56,47.37,75.56,604.45,451.55,0.0,152
+Rajesh Giri,rajesh.giri@kiwitech.com,261.85,0.0,8,102,99,57.29,32.73,261.85,794.15,0.0,153
+manoj kumar,manoj.kumar@kiwitech.com,277.9,195.48,175,46,13,28.18,59.17,473.38,582.62,0.0,154
+Raushan kumar,raushan.kumar@kiwitech.com,235.2,134.15,101,37,28,47.84,46.17,369.35,686.65,0.0,155
+ekansh.mittal,ekansh.mittal@kiwitech.com,68.3,60.25,72,22,19,51.31,16.07,128.55,927.45,0.0,156
+Anuj Kumar Sharma,anuj.kumar.sharma@kiwitech.com,127.3,97.08,8,49,82,430.36,28.05,224.38,831.62,0.0,157
+Sakshi Singh,sakshi.singh@kiwitech.com,272.72,132.18,135,1,22,64.86,50.61,404.9,651.1,0.0,158
+Sushmeeta Bhat,sushmeeta.bhat@kiwitech.com,277.45,0.0,63,11,31,234.35,34.68,277.45,778.55,0.0,159
+Neeraj Pandey,neeraj.pandey@kiwitech.com,148.87,81.13,47,42,112,128.71,28.75,230.0,826.0,0.0,160
