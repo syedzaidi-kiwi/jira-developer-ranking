@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# JIRA data files
+jira_data/
+data_advanced/
+
+# Output files
+developer_rankings.csv
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
