@@ -6,7 +6,7 @@ import requests
 from io import StringIO
 
 # Set page config
-st.set_page_config(page_title="Developer Rankings", page_icon="🏆", layout="wide")
+st.set_page_config(page_title="KiwiTech Developer Rankings", page_icon="🏆", layout="wide")
 
 # Function to load the CSV file from GitHub
 @st.cache_data(ttl=3600)  # Cache for 1 hour
@@ -90,4 +90,4 @@ st.sidebar.info("This page will auto-refresh every 60 minutes to show the latest
 
 # Footer
 st.markdown("---")
-st.markdown("Developer Rankings Dashboard - Created with Streamlit")
+st.markdown("Developer Rankings Dashboard - Created with ❤ by KiwiTech AI ")

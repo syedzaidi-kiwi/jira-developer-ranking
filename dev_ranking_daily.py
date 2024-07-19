@@ -150,7 +150,8 @@ class DeveloperRanking:
         self.rankings['Rank'] = range(1, len(self.rankings) + 1)
 
     def save_rankings(self, output_file):
-        rankings_to_save = self.rankings.drop(columns=['EstimationAccuracy'])
+        columns_to_drop = ['BugCount', 'CriticalBugCount', 'BlockerBugCount', 'EstimationAccuracy']
+        rankings_to_save = self.rankings.drop(columns=columns_to_drop)
         rankings_to_save.to_csv(output_file, index=False)
         print(f"Rankings saved to {output_file}")
 
