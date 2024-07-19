@@ -63,7 +63,7 @@ def clean_and_transform_data(df):
             df[col] = pd.to_datetime(df[col])
     return df
 
-def save_to_csv(df, filename, output_dir='jira_data', mode='a'):
+def save_to_csv(df, filename, output_dir='jira_data_daily', mode='a'):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     file_path = os.path.join(output_dir, filename)
