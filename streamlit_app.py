@@ -27,7 +27,7 @@ def load_data():
 df, last_updated = load_data()
 
 # Title
-st.title('🏆 Developer Rankings')
+st.title('🏆 KiwiTech Developer Rankings')
 
 if df is not None:
     # Display last updated time
