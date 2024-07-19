@@ -12,7 +12,7 @@ st.set_page_config(page_title="KiwiTech Developer Rankings", page_icon="🏆", l
 @st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_data():
     # GitHub raw content URL for your CSV file
-    github_csv_url = "https://raw.githubusercontent.com/syedzaidi-kiwi/jira-developer-ranking/main/developer_rankings_final.csv"
+    github_csv_url = st.secrets["github"]["csv_url"]
     
     response = requests.get(github_csv_url)
     if response.status_code == 200:
@@ -45,9 +45,9 @@ if df is not None:
     fig2 = px.scatter(df, x='BugTime', y='SubtaskTime', hover_data=['Name'], title='Bug Time vs Subtask Time')
     st.plotly_chart(fig2)
 
-    # Create a pie chart of bug criticality distribution
-    bug_data = df[['BugCount', 'CriticalBugCount', 'BlockerBugCount']].sum()
-    fig3 = px.pie(values=bug_data.values, names=bug_data.index, title='Bug Criticality Distribution')
+    # Create a pie chart of project time vs bench time
+    time_data = df[['ProjectTime', 'BenchTime']].sum()
+    fig3 = px.pie(values=time_data.values, names=time_data.index, title='Project Time vs Bench Time Distribution')
     st.plotly_chart(fig3)
 
     # Add filters
@@ -90,4 +90,5 @@ st.sidebar.info("This page will auto-refresh every 60 minutes to show the latest
 
 # Footer
 st.markdown("---")
-st.markdown("Developer Rankings Dashboard - Created with ❤ by KiwiTech AI ")
+st.markdown("Developer Rankings Dashboard - Created with ❤ by KiwiTech AI")
+
