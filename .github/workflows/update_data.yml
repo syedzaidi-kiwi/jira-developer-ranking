@@ -23,7 +23,7 @@ jobs:
         JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
         JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-      run: python jira_extract_daily.py
+      run: python jira_extract_final.py
     - name: Run developer ranking
       run: python dev_ranking_daily.py
     - name: Commit and push if changed
