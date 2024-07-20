@@ -46,8 +46,9 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add developer_rankings_final.csv
-        git diff --staged --quiet || git commit -m "Update developer rankings"
-        git push
+        git diff --staged --quiet || (git commit -m "Update developer rankings" && git push)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
