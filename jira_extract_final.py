@@ -89,6 +89,7 @@ def process_project(jira, project, start_date):
         return None
 
 def main():
+    logging.info("Starting JIRA data extraction")
     load_dotenv()
 
     jira = JiraDataExtractor(
@@ -97,16 +98,22 @@ def main():
         api_token=os.getenv('JIRA_API_TOKEN')
     )
 
+    logging.info(f"JIRA Base URL: {os.getenv('JIRA_BASE_URL')}")
+    logging.info(f"JIRA Email: {os.getenv('JIRA_EMAIL')}")
+
     # Calculate start date (24 hours ago)
     start_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d %H:%M')
+    logging.info(f"Fetching data from: {start_date}")
 
     # Create a temporary directory for new data
     temp_dir = 'jira_data_temp'
     if os.path.exists(temp_dir):
         shutil.rmtree(temp_dir)
     os.makedirs(temp_dir)
+    logging.info(f"Created temporary directory: {temp_dir}")
 
     projects = jira.get_all_projects()
+    logging.info(f"Found {len(projects)} projects")
     projects_df = pd.DataFrame(projects)
     save_to_csv(projects_df, 'all_projects.csv', output_dir=temp_dir)
 
@@ -121,14 +128,18 @@ def main():
                 if not issues_df.empty:
                     issues_df = clean_and_transform_data(issues_df)
                     save_to_csv(issues_df, f'{project_key}_issues.csv', output_dir=temp_dir)
+                else:
+                    logging.info(f"No issues found for project: {project_key}")
 
     # Replace old data with new data
     old_dir = 'jira_data_daily'
     if os.path.exists(old_dir):
         shutil.rmtree(old_dir)
     os.rename(temp_dir, old_dir)
+    logging.info(f"Replaced old data directory with new data")
 
     logging.info("Daily data extraction completed. Old data replaced with new data.")
+    logging.info(f"Contents of jira_data_daily: {os.listdir('jira_data_daily')}")
 
 if __name__ == "__main__":
     main()
