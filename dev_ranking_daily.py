@@ -156,7 +156,7 @@ class DeveloperRanking:
         print(f"Rankings saved to {output_file}")
 
 def main():
-    data_dir = 'jira_data'
+    data_dir = 'jira_data_daily'
     ranking = DeveloperRanking(data_dir)
     ranking.rank_developers()
     ranking.save_rankings('developer_rankings_final.csv')
