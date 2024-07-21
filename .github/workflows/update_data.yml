@@ -2,7 +2,7 @@ name: Update Developer Rankings
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Runs at 2 AM UTC every day
+    - cron: '0 1 */4 * *'  # Runs at 1 AM UTC every 4th day
   workflow_dispatch:  # Allows manual triggering
 
 jobs:

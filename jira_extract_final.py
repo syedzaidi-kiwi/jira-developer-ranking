@@ -101,8 +101,8 @@ def main():
     logging.info(f"JIRA Base URL: {os.getenv('JIRA_BASE_URL')}")
     logging.info(f"JIRA Email: {os.getenv('JIRA_EMAIL')}")
 
-    # Calculate start date (24 hours ago)
-    start_date = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d %H:%M')
+    # Calculate start date (5 days ago)
+    start_date = (datetime.now() - timedelta(days=5)).strftime('%Y-%m-%d %H:%M')
     logging.info(f"Fetching data from: {start_date}")
 
     # Create a temporary directory for new data
