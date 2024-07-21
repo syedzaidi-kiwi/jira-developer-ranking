@@ -71,7 +71,7 @@ if df is not None and not df.empty:
 
     # Display the rankings table
     st.subheader("Developer Rankings")
-    st.dataframe(filtered_df.reset_index(drop=True))
+    st.data_editor(filtered_df, hide_index=True, num_rows="fixed")
 
     # Create a bar chart of top 10 developers by TotalScore
     top_10 = filtered_df.nlargest(10, 'TotalScore')
@@ -105,4 +105,4 @@ st.sidebar.info("This page will auto-refresh every 60 minutes to show the latest
 
 # Footer
 st.markdown("---")
-st.markdown("Developer Rankings Dashboard - Created with :hearts:by KiwiTech AI Team")
+st.markdown("Developer Rankings Dashboard - Created with ❤ by KiwiTech AI")
