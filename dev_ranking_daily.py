@@ -3,6 +3,9 @@ import os
 import numpy as np
 from datetime import datetime, timedelta
 import pytz
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class DeveloperRanking:
     def __init__(self, data_dir):
@@ -120,8 +123,8 @@ class DeveloperRanking:
             )
             return round(max(0, score), 2)
         except Exception as e:
-            print(f"Error calculating score for row: {row}")
-            print(f"Error message: {str(e)}")
+            logging.error(f"Error calculating score for row: {row}")
+            logging.error(f"Error message: {str(e)}")
             return 0  # Return a default score if calculation fails
 
     def rank_developers(self):
@@ -150,25 +153,51 @@ class DeveloperRanking:
             })
 
         self.rankings = pd.DataFrame(rankings_list)
-        self.rankings['TotalScore'] = self.rankings.apply(self.calculate_score, axis=1)
-        self.rankings = self.rankings.sort_values('TotalScore', ascending=False)
-        self.rankings['Rank'] = range(1, len(self.rankings) + 1)
+        
+        if self.rankings.empty:
+            logging.warning("No developers met the criteria for ranking.")
+            self.rankings = pd.DataFrame(columns=['Name', 'Email', 'TotalScore', 'Rank'])
+        else:
+            self.rankings['TotalScore'] = self.rankings.apply(self.calculate_score, axis=1)
+            self.rankings = self.rankings.sort_values('TotalScore', ascending=False)
+            self.rankings['Rank'] = range(1, len(self.rankings) + 1)
 
-        print("Rankings DataFrame:")
-        print(self.rankings.head())
-        print(f"Shape of rankings DataFrame: {self.rankings.shape}")
+        logging.info("Rankings DataFrame:")
+        logging.info(self.rankings.head())
+        logging.info(f"Shape of rankings DataFrame: {self.rankings.shape}")
+        logging.info("Columns in the rankings DataFrame:")
+        logging.info(self.rankings.columns)
 
     def save_rankings(self, output_file):
-        columns_to_drop = ['BugCount', 'CriticalBugCount', 'BlockerBugCount', 'EstimationAccuracy']
-        rankings_to_save = self.rankings.drop(columns=columns_to_drop)
+        columns_to_keep = ['Name', 'Email', 'BugTime', 'SubtaskTime', 'AvgCompletionTime', 'DaysLogged8Hours', 'ProjectTime', 'BenchTime', 'TotalScore', 'Rank']
+        rankings_to_save = self.rankings[columns_to_keep]
+        
+        logging.info("Columns in the rankings_to_save DataFrame:")
+        logging.info(rankings_to_save.columns)
+        logging.info(f"Shape of rankings_to_save DataFrame: {rankings_to_save.shape}")
+
         rankings_to_save.to_csv(output_file, index=False)
-        print(f"Rankings saved to {output_file}")
+        logging.info(f"Rankings saved to {output_file}")
 
 def main():
-    data_dir = 'jira_data_daily'
-    ranking = DeveloperRanking(data_dir)
-    ranking.rank_developers()
-    ranking.save_rankings('developer_rankings_final.csv')
+    try:
+        data_dir = 'jira_data_daily'
+        if not os.path.exists(data_dir):
+            raise FileNotFoundError(f"Directory not found: {data_dir}")
+        
+        files = [f for f in os.listdir(data_dir) if f.endswith('_issues.csv')]
+        if not files:
+            raise FileNotFoundError(f"No CSV files found in {data_dir}")
+        
+        logging.info(f"Found {len(files)} CSV files in {data_dir}")
+        
+        ranking = DeveloperRanking(data_dir)
+        ranking.rank_developers()
+        ranking.save_rankings('developer_rankings_final.csv')
+        
+    except Exception as e:
+        logging.error(f"An error occurred: {str(e)}")
+        raise
 
 if __name__ == "__main__":
     main()
