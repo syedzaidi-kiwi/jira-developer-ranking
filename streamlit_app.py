@@ -12,25 +12,17 @@ st.set_page_config(page_title="KiwiTech Developer Rankings", page_icon="🏆", l
 @st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_data():
     try:
-        # Hardcoded GitHub raw content URL for your CSV file
         github_csv_url = "https://raw.githubusercontent.com/syedzaidi-kiwi/jira-developer-ranking/main/developer_rankings_final.csv"
-        
-        st.info(f"Attempting to load data from: {github_csv_url}")
-        
         response = requests.get(github_csv_url)
         response.raise_for_status()  # Raise an exception for bad responses
         
         csv_content = StringIO(response.text)
         df = pd.read_csv(csv_content)
         
-        st.info(f"Data loaded successfully. Shape: {df.shape}")
-        
         # Convert 'TotalScore' to numeric, replacing any non-numeric values with NaN
         df['TotalScore'] = pd.to_numeric(df['TotalScore'], errors='coerce')
         # Drop rows where 'TotalScore' is NaN
         df = df.dropna(subset=['TotalScore'])
-        
-        st.info(f"Data processed. Final shape: {df.shape}")
         
         last_updated = datetime.now()
         return df, last_updated
@@ -42,20 +34,6 @@ def load_data():
         st.error(f"An unexpected error occurred: {str(e)}")
     
     return None, None
-
-# Debug section
-st.sidebar.header("Debug Information")
-if st.sidebar.checkbox("Show Debug Info"):
-    st.sidebar.subheader("GitHub CSV URL")
-    github_csv_url = "https://raw.githubusercontent.com/syedzaidi-kiwi/jira-developer-ranking/main/developer_rankings_final.csv"
-    st.sidebar.text(github_csv_url)
-    
-    st.sidebar.subheader("Raw CSV Content")
-    try:
-        response = requests.get(github_csv_url)
-        st.sidebar.text(response.text[:500] + "..." if len(response.text) > 500 else response.text)
-    except Exception as e:
-        st.sidebar.text(f"Error fetching raw content: {str(e)}")
 
 # Load the data
 df, last_updated = load_data()
@@ -93,7 +71,7 @@ if df is not None and not df.empty:
 
     # Display the rankings table
     st.subheader("Developer Rankings")
-    st.dataframe(filtered_df)
+    st.dataframe(filtered_df.reset_index(drop=True))
 
     # Create a bar chart of top 10 developers by TotalScore
     top_10 = filtered_df.nlargest(10, 'TotalScore')
@@ -127,4 +105,4 @@ st.sidebar.info("This page will auto-refresh every 60 minutes to show the latest
 
 # Footer
 st.markdown("---")
-st.markdown("Developer Rankings Dashboard - Created with ❤ by KiwiTech AI")
+st.markdown("Developer Rankings Dashboard - Created with :hearts:by KiwiTech AI Team")
