@@ -1,11 +1,1 @@
-Name,Email,BugTime,SubtaskTime,AvgCompletionTime,DaysLogged8Hours,ProjectTime,BenchTime,TotalScore,Rank
-Vijay Kumar,vijay.kumar@kiwitech.com,0.0,536.0,0.0,67.0,536.0,520.0,5571.05,1
-Prince kumar Thakur,prince.kumar.thakur@kiwitech.com,0.0,69.07,0.0,8.63,69.07,986.93,847.94,2
-deepak.soni,deepak.soni@kiwitech.com,0.0,25.0,0.0,3.12,25.0,1031.0,402.61,3
-Meghna Sharma,meghna.sharma@kiwitech.com,0.0,20.0,0.0,2.5,20.0,1036.0,402.09,4
-shivam.srivastava1,shivam.srivastava1@kiwitech.com,0.0,19.18,0.0,2.4,19.18,1036.82,343.8,5
-Anubha Agarwal1,anubha.agarwal1@kiwitech.com,2.1,58.5,19.03,7.58,60.6,995.4,333.1,6
-Ashpreet Kaur,ashpreet.kaur@kiwitech.com,1.5,24.0,175.33,3.19,25.5,1030.5,207.14,7
-Anuj Kumar Sharma,anuj.kumar.sharma@kiwitech.com,6.27,9.0,36.11,1.91,15.27,1040.73,181.89,8
-Sakshi Singh,sakshi.singh@kiwitech.com,18.03,14.0,17.52,4.0,32.03,1023.97,153.05,9
-Abhi Meher yadav,abhi.meher.yadav@kiwitech.com,15.23,0.0,21.52,1.9,15.23,1040.77,117.1,10
+Name,Email,TotalScore,Rank
