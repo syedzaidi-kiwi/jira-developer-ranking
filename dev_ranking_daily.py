@@ -166,14 +166,31 @@ class DeveloperRanking:
         logging.info(self.rankings.head())
         logging.info(f"Shape of rankings DataFrame: {self.rankings.shape}")
         logging.info("Columns in the rankings DataFrame:")
-        logging.info(self.rankings.columns)
+        logging.info(self.rankings.columns.tolist())
 
     def save_rankings(self, output_file):
-        columns_to_keep = ['Name', 'Email', 'BugTime', 'SubtaskTime', 'AvgCompletionTime', 'DaysLogged8Hours', 'ProjectTime', 'BenchTime', 'TotalScore', 'Rank']
+        desired_columns = ['Name', 'Email', 'BugTime', 'SubtaskTime', 'AvgCompletionTime', 'DaysLogged8Hours', 'ProjectTime', 'BenchTime', 'TotalScore', 'Rank']
+        available_columns = self.rankings.columns.tolist()
+        
+        logging.info("Desired columns:")
+        logging.info(desired_columns)
+        logging.info("Available columns:")
+        logging.info(available_columns)
+        
+        columns_to_keep = [col for col in desired_columns if col in available_columns]
+        
+        if not columns_to_keep:
+            logging.error("No desired columns found in the DataFrame")
+            raise ValueError("No desired columns found in the DataFrame")
+        
+        missing_columns = set(desired_columns) - set(columns_to_keep)
+        if missing_columns:
+            logging.warning(f"Missing columns in the DataFrame: {missing_columns}")
+        
         rankings_to_save = self.rankings[columns_to_keep]
         
         logging.info("Columns in the rankings_to_save DataFrame:")
-        logging.info(rankings_to_save.columns)
+        logging.info(rankings_to_save.columns.tolist())
         logging.info(f"Shape of rankings_to_save DataFrame: {rankings_to_save.shape}")
 
         rankings_to_save.to_csv(output_file, index=False)
