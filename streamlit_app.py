@@ -12,8 +12,10 @@ st.set_page_config(page_title="KiwiTech Developer Rankings", page_icon="🏆", l
 @st.cache_data(ttl=3600)  # Cache for 1 hour
 def load_data():
     try:
-        # GitHub raw content URL for your CSV file
-        github_csv_url = st.secrets["github"]["csv_url"]  
+        # Hardcoded GitHub raw content URL for your CSV file
+        github_csv_url = "https://raw.githubusercontent.com/syedzaidi-kiwi/jira-developer-ranking/main/developer_rankings_final.csv"
+        
+        st.info(f"Attempting to load data from: {github_csv_url}")
         
         response = requests.get(github_csv_url)
         response.raise_for_status()  # Raise an exception for bad responses
@@ -21,16 +23,39 @@ def load_data():
         csv_content = StringIO(response.text)
         df = pd.read_csv(csv_content)
         
+        st.info(f"Data loaded successfully. Shape: {df.shape}")
+        
         # Convert 'TotalScore' to numeric, replacing any non-numeric values with NaN
         df['TotalScore'] = pd.to_numeric(df['TotalScore'], errors='coerce')
         # Drop rows where 'TotalScore' is NaN
         df = df.dropna(subset=['TotalScore'])
         
-        last_updated = datetime.now()  # Using current time as GitHub doesn't provide last modified time easily
+        st.info(f"Data processed. Final shape: {df.shape}")
+        
+        last_updated = datetime.now()
         return df, last_updated
+    except requests.RequestException as e:
+        st.error(f"Error fetching data from GitHub: {str(e)}")
+    except pd.errors.EmptyDataError:
+        st.error("The CSV file is empty.")
     except Exception as e:
-        st.error(f"Error loading data: {str(e)}")
-        return None, None
+        st.error(f"An unexpected error occurred: {str(e)}")
+    
+    return None, None
+
+# Debug section
+st.sidebar.header("Debug Information")
+if st.sidebar.checkbox("Show Debug Info"):
+    st.sidebar.subheader("GitHub CSV URL")
+    github_csv_url = "https://raw.githubusercontent.com/syedzaidi-kiwi/jira-developer-ranking/main/developer_rankings_final.csv"
+    st.sidebar.text(github_csv_url)
+    
+    st.sidebar.subheader("Raw CSV Content")
+    try:
+        response = requests.get(github_csv_url)
+        st.sidebar.text(response.text[:500] + "..." if len(response.text) > 500 else response.text)
+    except Exception as e:
+        st.sidebar.text(f"Error fetching raw content: {str(e)}")
 
 # Load the data
 df, last_updated = load_data()
