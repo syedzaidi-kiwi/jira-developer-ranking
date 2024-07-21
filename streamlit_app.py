@@ -69,9 +69,10 @@ if df is not None and not df.empty:
         filtered_df = filtered_df[filtered_df['Name'].isin(selected_developers)]
     filtered_df = filtered_df[(filtered_df['TotalScore'] >= score_range[0]) & (filtered_df['TotalScore'] <= score_range[1])]
 
-    # Display the rankings table
+    # Display the rankings table (excluding BugTime and AvgCompletionTime)
     st.subheader("Developer Rankings")
-    st.data_editor(filtered_df, hide_index=True, num_rows="fixed")
+    display_columns = [col for col in filtered_df.columns if col not in ['BugTime', 'AvgCompletionTime']]
+    st.data_editor(filtered_df[display_columns], hide_index=True, num_rows="fixed")
 
     # Create a bar chart of top 10 developers by TotalScore
     top_10 = filtered_df.nlargest(10, 'TotalScore')
