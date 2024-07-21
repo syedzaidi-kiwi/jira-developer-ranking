@@ -109,15 +109,20 @@ class DeveloperRanking:
         return round(project_time, 2), round(bench_time, 2)
 
     def calculate_score(self, row):
-        score = (
-            (row['SubtaskTime'] / (row['BugTime'] + 1)) * 10 +
-            (row['BugCount'] * 1 + row['CriticalBugCount'] * 2 + row['BlockerBugCount'] * 3) * -1 +
-            (480 - min(row['AvgCompletionTime'], 480)) / 48 * 10 +
-            row['DaysLogged8Hours'] / 132 * 100 +
-            (2 - min(abs(1 - (row['EstimationAccuracy'] / 100)), 1)) * 50 +
-            row['ProjectTime'] / (row['BenchTime'] + 1) * 10
-        )
-        return round(max(0, score), 2)
+        try:
+            score = (
+                (row['SubtaskTime'] / (row['BugTime'] + 1)) * 10 +
+                (row['BugCount'] * 1 + row['CriticalBugCount'] * 2 + row['BlockerBugCount'] * 3) * -1 +
+                (480 - min(row['AvgCompletionTime'], 480)) / 48 * 10 +
+                row['DaysLogged8Hours'] / 132 * 100 +
+                (2 - min(abs(1 - (row['EstimationAccuracy'] / 100)), 1)) * 50 +
+                row['ProjectTime'] / (row['BenchTime'] + 1) * 10
+            )
+            return round(max(0, score), 2)
+        except Exception as e:
+            print(f"Error calculating score for row: {row}")
+            print(f"Error message: {str(e)}")
+            return 0  # Return a default score if calculation fails
 
     def rank_developers(self):
         rankings_list = []
@@ -148,6 +153,10 @@ class DeveloperRanking:
         self.rankings['TotalScore'] = self.rankings.apply(self.calculate_score, axis=1)
         self.rankings = self.rankings.sort_values('TotalScore', ascending=False)
         self.rankings['Rank'] = range(1, len(self.rankings) + 1)
+
+        print("Rankings DataFrame:")
+        print(self.rankings.head())
+        print(f"Shape of rankings DataFrame: {self.rankings.shape}")
 
     def save_rankings(self, output_file):
         columns_to_drop = ['BugCount', 'CriticalBugCount', 'BlockerBugCount', 'EstimationAccuracy']
