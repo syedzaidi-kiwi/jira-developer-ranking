@@ -1,1 +1,5 @@
-0 1 * * * /usr/local/bin/python /app/daily_update.py >> /var/log/cron.log 2>&1
+# Run jira_extract_final.py every 4th day at 2AM UTC
+0 2 */4 * * cd /app && python jira_extract_final.py >> /var/log/cron.log 2>&1
+
+# Run dev_ranking_daily.py every 4th day at 2:15AM UTC (after jira_extract_final.py)
+15 2 */4 * * cd /app && python dev_ranking_daily.py >> /var/log/cron.log 2>&1
